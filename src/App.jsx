@@ -1,10 +1,14 @@
 import "./App.css"
+import { BrowserRouter, Routes, Route } from "react-router-dom"
+import Home from "./pages/Home/Home"
 
 function App() {
   return (
-    <>
-      <h1>App jsx</h1>
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/vite-pages-react/" element={<Home />}></Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
 
